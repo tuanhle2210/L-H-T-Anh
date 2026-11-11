@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+    <legent>biểu mẫu</legent>
+    <form action="/action_page.php" method="get">
+        <label for="fname" required>Tên của bạn</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="name">Họ của bạn</label>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="name">Trường học</label>
+        <select>
+            <option value="TMU">TMU</option>
+            <option value="UET" selected="UET">UET</option>
+            <option value="NEU">NEU</option>
+            <option value="HUST">HUST</option>
+            <option value="TLU">TLU</option>
+        </select><br>
+        <label for="name">Nêu cảm nghĩ về trường học của bạn</label>
+        <textarea name="message" id="message" rows="2" cols="20"></textarea>
+        <br>
+        <button type="button" onclick="alert('Hello')">click</button>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="k62s1">
+            <option value="k62s2">
+            <option value="k62s3">
+            <option value="k62s4">
+        </datalist>
+        <br>
+        <label for="date">Ngày tháng năm sinh</label>
+        <input type="number" id="date" placeholder="dd/mm/yyyy">
+        <br>
+        <button type="reset">làm lại</button>
+    </form>
+    </fieldset>
+</body>
+</html>
